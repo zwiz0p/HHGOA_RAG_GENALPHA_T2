@@ -1,6 +1,5 @@
 import re
 from typing import List, Dict
-import torch
 
 from app.core import config
 from app.deps import get_reranker
@@ -133,12 +132,11 @@ def rerank(query: str, candidates: List[Dict], top_k: int = config.RERANK_TOP_K)
     reranker = get_reranker()
     pairs = [(query, c["text"]) for c in eval_candidates]
 
-    with torch.inference_mode():
-        scores = reranker.predict(
-            pairs,
-            batch_size=MAX_RERANK_CANDIDATES,
-            show_progress_bar=False,
-        )
+    scores = reranker.predict(
+        pairs,
+        batch_size=MAX_RERANK_CANDIDATES,
+        show_progress_bar=False,
+    )
 
     for c, s in zip(eval_candidates, scores):
         c["rerank_score"] = float(s)

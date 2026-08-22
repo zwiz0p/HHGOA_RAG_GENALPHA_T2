@@ -1,6 +1,5 @@
 from typing import List, Dict
 import numpy as np
-import torch
 from qdrant_client import models
 
 from app.core import config
@@ -14,12 +13,11 @@ def dense_search(query: str, top_k: int = config.DENSE_TOP_K) -> List[Dict]:
 
     # 1. High-speed in-memory vector dot-product search (<30ms on CPU)
     if dense_matrix is not None and chunks is not None:
-        with torch.inference_mode():
-            query_vec = embedder.encode(
-                query,
-                show_progress_bar=False,
-                normalize_embeddings=True,
-            )
+        query_vec = embedder.encode(
+            query,
+            show_progress_bar=False,
+            normalize_embeddings=True,
+        )
 
         scores = dense_matrix @ query_vec
         top_idx = np.argpartition(scores, -top_k)[-top_k:]
@@ -35,12 +33,11 @@ def dense_search(query: str, top_k: int = config.DENSE_TOP_K) -> List[Dict]:
 
     # 2. Fallback to local Qdrant client
     client = get_qdrant_client()
-    with torch.inference_mode():
-        query_vector = embedder.encode(
-            query,
-            show_progress_bar=False,
-            normalize_embeddings=True,
-        ).tolist()
+    query_vector = embedder.encode(
+        query,
+        show_progress_bar=False,
+        normalize_embeddings=True,
+    ).tolist()
 
     hits = client.query_points(
         collection_name=config.QDRANT_COLLECTION,

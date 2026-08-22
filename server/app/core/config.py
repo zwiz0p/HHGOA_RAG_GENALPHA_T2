@@ -1,4 +1,10 @@
 import os
+
+# Prevent HuggingFace transformers from importing PyTorch in ONNX production path
+os.environ["USE_TORCH"] = "0"
+os.environ["USE_TF"] = "0"
+os.environ["TRANSFORMERS_NO_ADVISORY_WARNINGS"] = "1"
+
 from dotenv import load_dotenv
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.dirname(__file__)))

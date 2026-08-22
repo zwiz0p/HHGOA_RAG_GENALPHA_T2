@@ -2,7 +2,6 @@ import time
 import re
 from typing import Dict, Any, List
 import numpy as np
-import torch
 
 from app.deps import get_embedder, get_corpus_chunks, get_dense_matrix
 from ingestion.chunkers import fixed_overlap, sentence_aware, semantic, metadata_aware
@@ -26,8 +25,7 @@ def compare_chunking_strategies(query: str) -> Dict[str, Any]:
     t_start = time.perf_counter()
 
     # 1. Retrieve top matching sample passages from the corpus to act as the source document set
-    with torch.inference_mode():
-        q_vec = embedder.encode(query, show_progress_bar=False, normalize_embeddings=True)
+    q_vec = embedder.encode(query, show_progress_bar=False, normalize_embeddings=True)
 
     if dense_matrix is not None and chunks is not None:
         scores = dense_matrix @ q_vec
@@ -109,8 +107,7 @@ def compare_chunking_strategies(query: str) -> Dict[str, Any]:
 
     # 3. Single Unified Batch Encoding for sub-30ms performance across all strategies
     if all_candidate_texts:
-        with torch.inference_mode():
-            all_vecs = embedder.encode(all_candidate_texts, show_progress_bar=False, normalize_embeddings=True)
+        all_vecs = embedder.encode(all_candidate_texts, show_progress_bar=False, normalize_embeddings=True)
         all_sims = all_vecs @ q_vec
     else:
         all_sims = []
