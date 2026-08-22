@@ -1,0 +1,51 @@
+blocked,grounded,query,search_and_rank_ms,source_type,stage_bm25_retrieval_ms,stage_confidence_guardrail_ms,stage_dense_retrieval_ms,stage_fusion_ms,stage_generation_general_ms,stage_generation_ms,stage_grounding_guardrail_ms,stage_pre_retrieval_guardrail_ms,stage_rerank_ms,stage_retrieval_parallel_ms,total_latency_ms
+False,True,Hello! Who are you?,0.0,fast_path,,,,,,,,0.01,,,0.01
+False,True,What can you do?,0.0,fast_path,,,,,,,,0.04,,,0.04
+False,True,Help me understand this app,0.0,fast_path,,,,,,,,0.05,,,0.05
+False,True,How does this system work?,124.8,knowledge_base,1.68,0.01,26.06,0.05,,1176.51,0.12,0.05,97.8,26.95,1329.23
+False,True,Hi there!,0.0,fast_path,,,,,,,,0.06,,,0.06
+False,True,Who directed the Los Alamos Laboratory during the Manhattan Project?,88.1,knowledge_base,1.86,0.01,28.66,0.04,,3419.22,0.15,0.06,58.44,29.62,3538.06
+False,True,What is the capital of the Volga river region?,100.15,knowledge_base,2.32,0.01,28.19,0.04,,3998.11,0.4,0.06,71.04,29.07,4129.24
+False,True,What is the chemical formula for water?,153.83,knowledge_base,2.21,0.01,26.48,0.05,,1683.38,0.15,0.06,126.28,27.5,1866.12
+False,False,When was the Eiffel Tower constructed?,128.66,general_knowledge,2.69,0.01,24.51,0.05,1923.94,,,0.07,103.22,25.39,2079.88
+False,True,What are the symptoms of acute appendicitis?,115.81,knowledge_base,1.93,0.01,28.38,0.05,,2641.6,0.14,0.05,86.54,29.22,2787.92
+False,True,How does photosynthesis work in plants?,95.1,knowledge_base,3.57,0.01,27.59,0.04,,7829.97,0.19,0.05,66.65,28.41,7956.48
+False,True,Who was the first president of the United States?,125.98,knowledge_base,3.04,0.01,31.21,0.05,,1207.55,0.14,0.05,93.96,31.97,1367.98
+False,True,What causes ocean tides on Earth?,80.34,knowledge_base,2.48,0.01,24.68,0.04,,3516.89,0.21,0.04,54.88,25.42,3624.65
+False,True,What is the speed of light in vacuum?,78.77,knowledge_base,1.98,0.01,24.55,0.04,,9340.83,0.12,0.04,53.48,25.25,9446.3
+False,False,What is the boiling point of ethanol?,79.81,general_knowledge,1.53,0.01,31.3,0.06,8284.06,5283.79,0.03,0.04,47.62,32.13,13680.57
+False,False,How do airplanes generate aerodynamic lift?,135.54,general_knowledge,2.56,0.01,29.19,0.05,3402.29,,,0.05,105.56,29.93,3569.64
+False,True,What is the function of the human pancreas?,85.71,knowledge_base,1.91,0.01,27.65,0.04,,3135.68,0.11,0.05,57.16,28.51,3251.12
+False,False,Who wrote Hamlet?,71.12,general_knowledge,3.45,0.01,29.32,0.05,2772.93,2790.27,0.03,0.04,40.85,30.22,5667.17
+False,True,What is the distance from the Earth to the Moon?,79.8,knowledge_base,2.23,0.01,30.75,0.07,,7961.35,0.15,0.05,48.04,31.69,8074.34
+False,False,What is Newton's third law of motion?,101.81,general_knowledge,2.37,0.01,29.51,0.06,2399.21,3012.18,0.03,0.04,71.48,30.27,5545.16
+False,True,मैनहट्टन परियोजना कब शुरू हुई थी?,223.75,knowledge_base,3.2,0.01,31.13,0.05,,9928.89,0.67,0.06,191.7,32.0,10187.71
+False,False,अम्लीय वर्षा के मुख्य कारण क्या हैं?,199.61,general_knowledge,2.41,0.01,30.54,0.06,21321.45,4217.21,0.04,0.04,168.2,31.35,25771.31
+False,True,प्रकाश संश्लेषण की प्रक्रिया कैसे होती है?,264.03,knowledge_base,3.39,0.01,38.64,0.06,,4157.39,0.38,0.05,224.56,39.41,4463.89
+True,,मानव हृदय का मुख्य कार्य क्या है?,76.88,knowledge_base,2.34,0.01,28.81,0.05,,35961.93,,0.06,47.04,29.79,36070.03
+False,False,भारत की राजधानी क्या है?,104.56,general_knowledge,3.74,0.01,27.32,0.04,11651.17,6264.49,0.08,0.05,76.41,28.11,18051.42
+False,True,पृथ्वी का वायुमंडल किन गैसों से बना है?,220.59,knowledge_base,3.14,0.01,28.41,0.04,,14936.77,0.26,0.06,191.23,29.32,15189.24
+False,True,सौर ऊर्जा क्या है और इसके क्या लाभ हैं?,176.49,knowledge_base,4.03,0.01,27.71,0.05,,18542.35,0.25,0.06,148.02,28.42,18750.9
+False,False,ग्लोबल वार्मिंग के प्रभाव क्या हैं?,217.52,general_knowledge,2.28,0.01,33.94,0.05,3700.95,3496.19,109.91,0.06,182.47,35.0,7560.86
+False,False,डीएनए की संरचना की खोज किसने की थी?,152.84,general_knowledge,3.46,0.01,30.84,0.05,5931.43,4075.43,0.06,0.04,121.16,31.63,10194.11
+False,False,विटामिन सी की कमी से कौन सा रोग होता है?,360.26,general_knowledge,2.5,0.01,33.69,0.07,5577.06,2581.51,0.04,0.04,325.69,34.5,8555.11
+False,False,How to make a masala omelette step by step?,100.09,general_knowledge,2.5,0.01,29.85,0.04,8824.48,15887.85,0.03,0.04,69.39,30.66,24844.85
+False,False,Can you give me a recipe for chocolate chip cookies?,85.97,general_knowledge,3.0,0.01,26.4,0.04,5662.68,9357.73,0.04,0.04,58.84,27.09,15135.87
+True,,What is the best way to train for a half marathon?,104.58,knowledge_base,2.11,0.01,32.42,0.06,,28471.06,,0.06,71.14,33.38,28610.24
+False,True,How do I write a thank you email to a colleague?,0.0,fast_path,,,,,,,,0.04,,,0.04
+False,False,Give me tips for staying productive while working from home.,172.69,general_knowledge,2.09,0.01,28.38,0.07,6532.41,,,0.06,143.32,29.3,6735.64
+False,True,How do you brew pour-over coffee properly?,96.3,knowledge_base,4.2,0.01,31.85,0.04,,5308.4,0.11,0.06,63.63,32.63,5440.93
+False,True,What are some good exercises for lower back pain?,125.72,knowledge_base,3.0,0.01,32.13,0.05,,20243.75,0.15,0.08,92.53,33.14,20404.84
+False,False,Write a short bedtime story about a friendly astronaut.,107.21,general_knowledge,2.87,0.01,28.21,0.05,12248.35,,,0.05,78.15,29.01,12386.7
+False,False,What should I pack for a 3-day camping trip?,90.91,general_knowledge,3.02,0.01,32.2,0.05,14080.78,14539.27,0.03,0.05,57.74,33.12,28746.27
+False,True,How do you make fresh homemade pasta?,160.83,knowledge_base,5.17,0.01,28.29,0.05,,5041.7,0.15,0.05,131.7,29.08,5236.2
+False,True,)what was the immediate impact of the success of the manhattan project?,97.17,knowledge_base,1.71,0.01,29.3,0.05,,3521.79,0.18,0.05,67.02,30.1,3650.21
+False,True,मैनहट्टन परियोजना की सफलता का तुरंत क्या प्रभाव पड़ा?,135.26,knowledge_base,5.08,0.01,26.6,0.05,,2950.23,0.2,0.07,107.84,27.37,3117.45
+False,True,"_________ justice is designed to repair the harm to victim, the community and the offender caused by the offender criminal act. question 19 options:",101.93,knowledge_base,3.79,0.01,35.64,0.05,,2699.22,0.15,0.06,65.45,36.43,2840.8
+False,True,"न्याय को पीड़ित, समुदाय और अपराधी द्वारा अपराधी कृत्य के कारण हुए नुकसान की मरम्मत करने के लिए डिज़ाइन किया गया है। प्रश्न 19 विकल्प:",209.85,knowledge_base,2.95,0.01,33.57,0.04,,6466.11,0.23,0.06,175.54,34.27,6712.78
+False,True,what direction does phloem flow,64.57,knowledge_base,1.28,0.01,24.37,0.04,,9424.51,0.09,0.05,39.37,25.16,9514.88
+False,False,फ्लूम किस दिशा में बहता है,152.65,general_knowledge,1.52,0.01,24.42,0.04,5067.28,9225.75,0.04,0.05,127.41,25.2,14471.72
+False,True,different types of social security disability,67.45,knowledge_base,2.13,0.01,29.49,0.05,,7873.18,0.13,0.06,37.13,30.27,7972.45
+False,True,विभिन्न प्रकार की सामाजिक सुरक्षा विकलांगता,139.99,knowledge_base,3.63,0.01,27.85,0.04,,6066.05,0.19,0.05,111.23,28.72,6237.77
+False,True,what does the american flag sticker on cars mean,108.22,knowledge_base,1.82,0.01,24.24,0.04,,2486.47,0.19,0.04,83.24,24.94,2620.99
+False,True,कारों पर अमेरिकी ध्वज के स्टिकर का क्या अर्थ है?,143.02,knowledge_base,5.24,0.01,32.4,0.06,,2772.12,0.18,0.05,109.82,33.14,2953.02

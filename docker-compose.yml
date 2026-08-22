@@ -1,0 +1,14 @@
+version: "3.9"
+
+services:
+  api:
+    build: ./server
+    ports:
+      - "8000:8000"
+    environment:
+      - SARVAM_API_KEY=${SARVAM_API_KEY}
+      - LLM_API_KEY=${LLM_API_KEY}
+      - LLM_MODEL=${LLM_MODEL:-claude-sonnet-4-6}
+    volumes:
+      - ./server/data:/app/data
+    command: uvicorn app.main:app --host 0.0.0.0 --port 8000

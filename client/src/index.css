@@ -1,0 +1,314 @@
+@import url('https://fonts.googleapis.com/css2?family=Chewy&family=Fredoka:wght@500;600;700&family=JetBrains+Mono:wght@500;600;700&family=Nunito:wght@600;700;800;900&family=Pragati+Narrow:wght@400;700&display=swap');
+
+:root {
+  --font-display: 'Chewy', 'Fredoka', cursive;
+  --font-accent: 'Fredoka', 'Nunito', sans-serif;
+  --font-hindi: 'Pragati Narrow', sans-serif;
+  --font-sans: 'Nunito', 'Pragati Narrow', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+
+  /* Liquid Glass Color Tokens */
+  --ink: #0F172A;
+  --ink-soft: #334155;
+  --sun: #F59E0B;
+  --sun-glow: #FDE68A;
+  --sun-dark: #D97706;
+  --terracotta: #EA580C;
+  --mint: #16A34A;
+  --mint-glow: #86EFAC;
+  --sky-blue: #2563EB;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body, #root {
+  width: 100%;
+  min-height: 100%;
+  background: transparent !important;
+  background-color: transparent !important;
+  color: var(--ink);
+  font-family: var(--font-sans);
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* ==========================================================================
+   TRANSLUCENT FROSTED GLASS SYSTEM (Clear Blur with Visible Background)
+   ========================================================================== */
+
+/* Main Translucent Glass Cards */
+.liquid-glass-card {
+  position: relative;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.28) 0%, rgba(255, 255, 255, 0.12) 100%) !important;
+  backdrop-filter: blur(24px) saturate(190%) contrast(102%) !important;
+  -webkit-backdrop-filter: blur(24px) saturate(190%) contrast(102%) !important;
+  border: 1.5px solid rgba(255, 255, 255, 0.55) !important;
+  box-shadow: 
+    0 20px 50px -10px rgba(15, 23, 42, 0.18),
+    0 8px 20px -4px rgba(0, 0, 0, 0.08),
+    inset 0 1.5px 1.5px 0 rgba(255, 255, 255, 0.85),
+    inset 0 -1px 1.5px 0 rgba(255, 255, 255, 0.20),
+    inset 0 0 18px 0 rgba(255, 255, 255, 0.15) !important;
+  border-radius: 26px;
+  transition: transform 0.2s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.2s ease;
+  overflow: hidden;
+}
+
+.liquid-glass-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 40%;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.25) 0%, rgba(255, 255, 255, 0.02) 80%, transparent 100%);
+  border-radius: 26px 26px 0 0;
+  pointer-events: none;
+}
+
+.liquid-glass-card:hover {
+  box-shadow: 
+    0 26px 65px -10px rgba(15, 23, 42, 0.24),
+    0 10px 24px -4px rgba(0, 0, 0, 0.10),
+    inset 0 2px 2px 0 rgba(255, 255, 255, 0.95),
+    inset 0 -1.5px 2px 0 rgba(255, 255, 255, 0.30);
+}
+
+/* User Message Bubble: Translucent Warm Glass */
+.liquid-glass-user {
+  position: relative;
+  background: linear-gradient(135deg, rgba(254, 243, 199, 0.38) 0%, rgba(253, 230, 138, 0.20) 100%) !important;
+  backdrop-filter: blur(20px) saturate(200%) !important;
+  -webkit-backdrop-filter: blur(20px) saturate(200%) !important;
+  border: 1.5px solid rgba(245, 158, 11, 0.45) !important;
+  box-shadow: 
+    0 14px 34px -6px rgba(245, 158, 11, 0.18),
+    0 4px 12px -2px rgba(0, 0, 0, 0.06),
+    inset 0 1.5px 1.5px 0 rgba(255, 255, 255, 0.85),
+    inset 0 -1px 1.5px 0 rgba(245, 158, 11, 0.20);
+  border-radius: 22px;
+  color: var(--ink);
+}
+
+/* Subtle Inner Container (Drawers / Quotes / Code) */
+.liquid-glass-subtle {
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.30) 0%, rgba(255, 255, 255, 0.14) 100%) !important;
+  backdrop-filter: blur(16px) saturate(180%) !important;
+  -webkit-backdrop-filter: blur(16px) saturate(180%) !important;
+  border: 1.5px solid rgba(255, 255, 255, 0.50) !important;
+  box-shadow: 
+    0 6px 18px rgba(0, 0, 0, 0.06),
+    inset 0 1.5px 1.5px rgba(255, 255, 255, 0.85);
+  border-radius: 18px;
+}
+
+/* Translucent Glass Interactive Buttons */
+.liquid-glass-btn {
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.32) 0%, rgba(255, 255, 255, 0.14) 100%) !important;
+  border: 1.5px solid rgba(255, 255, 255, 0.60) !important;
+  backdrop-filter: blur(20px) saturate(190%) !important;
+  -webkit-backdrop-filter: blur(20px) saturate(190%) !important;
+  box-shadow: 
+    0 8px 24px -4px rgba(15, 23, 42, 0.14),
+    0 2px 6px rgba(0, 0, 0, 0.06),
+    inset 0 1.5px 1.5px rgba(255, 255, 255, 0.85),
+    inset 0 -1px 1px rgba(255, 255, 255, 0.20);
+  border-radius: 9999px;
+  font-family: var(--font-accent);
+  font-weight: 700;
+  color: var(--ink);
+  cursor: pointer;
+  transition: transform 0.15s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.15s ease, background 0.15s ease;
+  user-select: none;
+  outline: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.liquid-glass-btn:hover {
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.50) 0%, rgba(255, 255, 255, 0.25) 100%) !important;
+  transform: translateY(-2px) scale(1.02);
+  box-shadow: 
+    0 12px 30px -4px rgba(15, 23, 42, 0.20),
+    0 4px 10px rgba(0, 0, 0, 0.08),
+    inset 0 2px 2px rgba(255, 255, 255, 0.95);
+  border-color: rgba(255, 255, 255, 0.80) !important;
+}
+
+.liquid-glass-btn:active {
+  transform: translateY(1px) scale(0.98);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+}
+
+/* Sun Gradient Orb */
+.liquid-sun-btn {
+  background: radial-gradient(circle at 35% 30%, var(--sun-glow) 0%, var(--sun) 60%, var(--sun-dark) 100%);
+  border: 2px solid rgba(255, 255, 255, 0.85);
+  box-shadow: 
+    0 10px 30px -4px rgba(245, 158, 11, 0.55),
+    0 4px 12px rgba(0, 0, 0, 0.10),
+    inset 0 2px 3px rgba(255, 255, 255, 0.85);
+  border-radius: 9999px;
+  cursor: pointer;
+  transition: transform 0.15s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.15s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  outline: none;
+}
+
+.liquid-sun-btn:hover {
+  transform: scale(1.08);
+  box-shadow: 
+    0 14px 38px -4px rgba(245, 158, 11, 0.70),
+    0 6px 16px rgba(0, 0, 0, 0.14),
+    inset 0 2px 4px rgba(255, 255, 255, 0.95);
+}
+
+.liquid-sun-btn:active {
+  transform: scale(0.94);
+}
+
+/* Translucent Frosted Glass Input Capsule (Background Blurry Visible) */
+.liquid-glass-input {
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.32) 0%, rgba(255, 255, 255, 0.14) 100%) !important;
+  border: 1.5px solid rgba(255, 255, 255, 0.65) !important;
+  backdrop-filter: blur(28px) saturate(200%) contrast(102%) !important;
+  -webkit-backdrop-filter: blur(28px) saturate(200%) contrast(102%) !important;
+  box-shadow: 
+    0 20px 50px -10px rgba(15, 23, 42, 0.20),
+    0 6px 18px -3px rgba(0, 0, 0, 0.08),
+    inset 0 1.5px 1.5px 0 rgba(255, 255, 255, 0.90),
+    inset 0 -1.5px 2px 0 rgba(255, 255, 255, 0.25),
+    inset 0 0 18px rgba(255, 255, 255, 0.15) !important;
+  border-radius: 9999px;
+  transition: box-shadow 0.2s ease, border-color 0.2s ease, background 0.2s ease, transform 0.2s ease;
+}
+
+.liquid-glass-input:focus-within {
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.45) 0%, rgba(255, 255, 255, 0.22) 100%) !important;
+  border-color: rgba(245, 158, 11, 0.85) !important;
+  box-shadow: 
+    0 24px 60px -8px rgba(245, 158, 11, 0.30),
+    0 8px 24px -4px rgba(0, 0, 0, 0.10),
+    inset 0 2px 2.5px rgba(255, 255, 255, 0.95),
+    inset 0 0 20px rgba(245, 158, 11, 0.18) !important;
+  transform: translateY(-1px);
+}
+
+/* Status Liquid Badges */
+.liquid-badge-green {
+  background: linear-gradient(135deg, rgba(220, 252, 231, 0.45) 0%, rgba(187, 247, 208, 0.25) 100%) !important;
+  border: 1px solid rgba(34, 197, 94, 0.45) !important;
+  backdrop-filter: blur(14px) saturate(180%) !important;
+  -webkit-backdrop-filter: blur(14px) saturate(180%) !important;
+  box-shadow: 0 2px 8px rgba(34, 197, 94, 0.14), inset 0 1px 1px rgba(255, 255, 255, 0.85);
+  color: #15803D;
+}
+
+.liquid-badge-amber {
+  background: linear-gradient(135deg, rgba(254, 243, 199, 0.45) 0%, rgba(253, 230, 138, 0.25) 100%) !important;
+  border: 1px solid rgba(245, 158, 11, 0.45) !important;
+  backdrop-filter: blur(14px) saturate(180%) !important;
+  -webkit-backdrop-filter: blur(14px) saturate(180%) !important;
+  box-shadow: 0 2px 8px rgba(245, 158, 11, 0.14), inset 0 1px 1px rgba(255, 255, 255, 0.85);
+  color: #B45309;
+}
+
+.liquid-badge-orange {
+  background: linear-gradient(135deg, rgba(255, 237, 213, 0.45) 0%, rgba(254, 215, 170, 0.25) 100%) !important;
+  border: 1px solid rgba(234, 88, 12, 0.45) !important;
+  backdrop-filter: blur(14px) saturate(180%) !important;
+  -webkit-backdrop-filter: blur(14px) saturate(180%) !important;
+  box-shadow: 0 2px 8px rgba(234, 88, 12, 0.14), inset 0 1px 1px rgba(255, 255, 255, 0.85);
+  color: #C2410C;
+}
+
+/* Parallax Canvas */
+.parallax-sky-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 125vh;
+  background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-image: url('/assets/sky-bg.png');
+  z-index: 0;
+  will-change: transform;
+  pointer-events: none;
+}
+
+@media (max-width: 768px) {
+  .parallax-sky-bg {
+    background-image: url('/assets/bgimage.jpeg');
+    background-position: center top;
+    height: 120vh;
+  }
+}
+
+/* Typography Utility Classes */
+.font-display {
+  font-family: var(--font-display);
+}
+
+.font-accent {
+  font-family: var(--font-accent);
+}
+
+.font-hindi {
+  font-family: var(--font-hindi);
+}
+
+.font-sans {
+  font-family: var(--font-sans);
+}
+
+.font-mono {
+  font-family: var(--font-mono);
+}
+
+.mono-metric {
+  font-family: var(--font-mono);
+  font-weight: 700;
+  letter-spacing: -0.2px;
+}
+
+/* Blinking live streaming caret */
+.cozy-caret {
+  display: inline-block;
+  width: 7px;
+  height: 16px;
+  margin-left: 4px;
+  vertical-align: -2px;
+  background-color: var(--sun);
+  border-radius: 2px;
+  animation: cozyBlink 0.85s steps(2, start) infinite;
+}
+
+@keyframes cozyBlink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+/* Liquid Wave Audio Visualizer Bar */
+.liquid-wave-bar {
+  display: inline-block;
+  width: 3.5px;
+  height: 14px;
+  border-radius: 999px;
+  background: linear-gradient(to top, var(--sun), var(--sun-glow));
+  animation: wavePulse 0.9s ease-in-out infinite alternate;
+}
+
+@keyframes wavePulse {
+  0% { transform: scaleY(0.4); opacity: 0.6; }
+  100% { transform: scaleY(1.3); opacity: 1; }
+}

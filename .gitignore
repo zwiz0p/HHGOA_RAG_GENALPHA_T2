@@ -1,0 +1,38 @@
+# Python
+.venv/
+venv/
+env/
+__pycache__/
+*.py[cod]
+
+# Node
+node_modules/
+dist/
+client/dist/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Environment
+.env
+.env.*
+
+# Local databases / vector stores / dataset files (>100MB)
+server/data/raw/*
+!server/data/raw/.gitkeep
+server/data/processed/*
+!server/data/processed/.gitkeep
+
+# Binary & Index files
+*.npy
+*.pkl
+*.jsonl
+*.bin
+*.index
+
+# Jupyter
+.ipynb_checkpoints/
+
+# IDE
+.vscode/
+.idea/

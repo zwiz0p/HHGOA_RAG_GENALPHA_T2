@@ -1,0 +1,76 @@
+{
+  "english": [
+    {
+      "query": "different types of social security disability",
+      "latency": 83.26,
+      "answer": "The best known are Social Security disability benefits. Social Security Disability (SSD) benefits are available to worke"
+    },
+    {
+      "query": "what does the american flag sticker on cars mean",
+      "latency": 86.0,
+      "answer": "American Flag Car Vinyl Sticker Decal Bumper Sticker for Auto, Cars, Trucks, Walls, Windows, and More. Black, White, and"
+    },
+    {
+      "query": "what do graduate students wear to class",
+      "latency": 84.79,
+      "answer": "The Grad Student’s Style: Competitive Casual. For the most part, students in graduate programs will not be expected to w"
+    },
+    {
+      "query": "can u claim cpa fees paid to a state audit on the itemized deduction form",
+      "latency": 61.97,
+      "answer": "as a miscellaneous itemized deduction. If you performed services as an employee of a state or local government and you w"
+    },
+    {
+      "query": "how to use sysdate in sql",
+      "latency": 46.22,
+      "answer": "PL/SQL developers often need to retrieve and work with the current date and time. Most developers use the classic SYSDAT"
+    },
+    {
+      "query": "coal miner's daughter cast",
+      "latency": 73.49,
+      "answer": "Coal Miner's Daughter is a screen adaptation of Lynn's autobiography, starring Sissy Spacek as Loretta Lynn. One of eigh"
+    }
+  ],
+  "hindi": [
+    {
+      "query": "मैनहट्टन परियोजना की सफलता का तुरंत क्या प्रभाव पड़ा?",
+      "latency": 88.22,
+      "answer": "वैज्ञानिक दिमाग के बीच संचार की उपस्थिति मैनहट्टन परियोजना की सफलता के लिए उतनी ही महत्वपूर्ण थी जितनी कि वैज्ञानिक बुद्"
+    },
+    {
+      "query": "न्याय को पीड़ित, समुदाय और अपराधी द्वारा अपराधी कृत्य के कारण हुए नुकसान की मरम्मत करने के लिए डिज़ाइन किया गया है। प्रश्न 19 विकल्प:",
+      "latency": 112.21,
+      "answer": "सर्कल में न केवल अपराधी और पीड़ित बल्कि दोस्तों और परिवारों, समुदाय के सदस्यों और न्याय प्रणाली के प्रतिनिधियों सहित विभ"
+    },
+    {
+      "query": "विभिन्न प्रकार की सामाजिक सुरक्षा विकलांगता",
+      "latency": 78.71,
+      "answer": "विकलांगता लाभ प्रकार और योग्यताएँ। सबसे प्रसिद्ध सामाजिक सुरक्षा विकलांगता लाभ (एस.एस.डी.) वे श्रमिक हैं जिन्होंने वेतन "
+    },
+    {
+      "query": "कारों पर अमेरिकी ध्वज के स्टिकर का क्या अर्थ है?",
+      "latency": 83.04,
+      "answer": "अमेरिकी ध्वज कार विनाइल स्टिकर डेकल ऑटो, कारों, ट्रकों, दीवारों, खिड़कियों और अधिक के लिए। कारों और ट्रकों के लिए काला, "
+    },
+    {
+      "query": "स्नातक छात्र कक्षा में क्या पहनते हैं",
+      "latency": 83.01,
+      "answer": "स्नातक छात्र की शैली: प्रतिस्पर्धी अनौपचारिक। अधिकांश स्नातक कार्यक्रमों में छात्रों से अपेक्षा नहीं की जाती है कि वे हर"
+    },
+    {
+      "query": "लिफ्ट का मतलब है",
+      "latency": 76.5,
+      "answer": "शब्दकोश प्रविष्टि अवलोकन: लिफ्ट का क्या अर्थ है? • एलिवेटर (संज्ञा) एलिवेटर संज्ञा के 2 अर्थ हैं: 1."
+    },
+    {
+      "query": "क्या आप विस्तृत कटौती प्रपत्र पर राज्य के लिए भुगतान किए गए सी.पी.ए. शुल्क का दावा कर सकते हैं?",
+      "latency": 96.62,
+      "answer": "बिक्री कर कटौती के लिए, आप या तो उस राशि का दावा कर सकते हैं जो आपने पूरे वर्ष में भुगतान की है - जिसका अर्थ है बहुत सार"
+    },
+    {
+      "query": "सिसडेट का उपयोग कैसे करें?",
+      "latency": 86.72,
+      "answer": "सभी निर्देशों का ध्यानपूर्वक पालन करें। 2 उपयोग करने के तरीके का ध्यानपूर्वक पालन करें।"
+    }
+  ]
+}
