@@ -1,0 +1,102 @@
+{
+  "initial_rss_mb": 469.26,
+  "startup_rss_mb": 2264.89,
+  "post_query_rss_mb": 2613.62,
+  "avg_latency_ms": 31.59,
+  "latencies_ms": [
+    53.07,
+    23.58,
+    23.63,
+    27.36,
+    30.3
+  ],
+  "query_results": [
+    {
+      "query": "Who directed the movie Goa?",
+      "latency_ms": 53.07,
+      "rss_mb": 2605.81,
+      "answer_preview": "This question is not present in the indexed MSMARCO-XI dataset.",
+      "top_chunk_id": "N/A",
+      "top_rerank_score": null,
+      "timings_ms": {
+        "pre_retrieval_guardrail": 1.08,
+        "retrieval_parallel": 51.17,
+        "dense_retrieval": 50.33,
+        "bm25_retrieval": 2.46,
+        "fusion": 0.05,
+        "heuristic_rerank": 0.57,
+        "confidence_guardrail": 0.0
+      }
+    },
+    {
+      "query": "Who produced the movie Goa?",
+      "latency_ms": 23.58,
+      "rss_mb": 2607.96,
+      "answer_preview": "This question is not present in the indexed MSMARCO-XI dataset.",
+      "top_chunk_id": "N/A",
+      "top_rerank_score": null,
+      "timings_ms": {
+        "pre_retrieval_guardrail": 0.04,
+        "retrieval_parallel": 22.92,
+        "dense_retrieval": 22.26,
+        "bm25_retrieval": 1.16,
+        "fusion": 0.05,
+        "heuristic_rerank": 0.4,
+        "confidence_guardrail": 0.01
+      }
+    },
+    {
+      "query": "Goa film music director details",
+      "latency_ms": 23.63,
+      "rss_mb": 2609.75,
+      "answer_preview": "This question is not present in the indexed MSMARCO-XI dataset.",
+      "top_chunk_id": "N/A",
+      "top_rerank_score": null,
+      "timings_ms": {
+        "pre_retrieval_guardrail": 0.04,
+        "retrieval_parallel": 22.83,
+        "dense_retrieval": 22.25,
+        "bm25_retrieval": 1.03,
+        "fusion": 0.05,
+        "heuristic_rerank": 0.54,
+        "confidence_guardrail": 0.0
+      }
+    },
+    {
+      "query": "गोआ फिल्म के निर्देशक कौन हैं?",
+      "latency_ms": 27.36,
+      "rss_mb": 2612.23,
+      "answer_preview": "This question is not present in the indexed MSMARCO-XI dataset.",
+      "top_chunk_id": "N/A",
+      "top_rerank_score": null,
+      "timings_ms": {
+        "pre_retrieval_guardrail": 0.04,
+        "retrieval_parallel": 25.79,
+        "dense_retrieval": 25.19,
+        "bm25_retrieval": 1.89,
+        "fusion": 0.05,
+        "heuristic_rerank": 1.26,
+        "confidence_guardrail": 0.01
+      }
+    },
+    {
+      "query": "What is the release date and cast of the movie Goa?",
+      "latency_ms": 30.3,
+      "rss_mb": 2613.62,
+      "answer_preview": "1  Release Date: Aug 10, 1977. 6  Cast:Donald Sutherland, George Lazenby, Henry ",
+      "top_chunk_id": "516567_6_en_sent_0",
+      "top_rerank_score": 0.6893,
+      "timings_ms": {
+        "pre_retrieval_guardrail": 0.04,
+        "retrieval_parallel": 28.14,
+        "dense_retrieval": 27.55,
+        "bm25_retrieval": 2.0,
+        "fusion": 0.04,
+        "heuristic_rerank": 0.24,
+        "confidence_guardrail": 0.01,
+        "extractive_assembly": 0.43,
+        "grounding_guardrail": 1.19
+      }
+    }
+  ]
+}

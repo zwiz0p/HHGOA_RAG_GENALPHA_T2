@@ -1,8 +1,9 @@
 from typing import List, Dict
+import numpy as np
 import bm25s
 
 from app.core import config
-from app.deps import get_bm25s_retriever, get_bm25_index
+from app.deps import get_bm25s_retriever, get_bm25_index, get_corpus_chunks
 
 
 def bm25_search(query: str, top_k: int = config.BM25_TOP_K) -> List[Dict]:
@@ -14,8 +15,12 @@ def bm25_search(query: str, top_k: int = config.BM25_TOP_K) -> List[Dict]:
         
         results = []
         if len(docs) > 0:
+            chunks = get_corpus_chunks()
             for doc, score in zip(docs[0], scores[0]):
-                payload = dict(doc)
+                if isinstance(doc, (int, np.integer)):
+                    payload = dict(chunks[doc])
+                else:
+                    payload = dict(doc)
                 payload["bm25_score"] = float(score)
                 results.append(payload)
         return results

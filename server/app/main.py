@@ -25,9 +25,8 @@ async def lifespan(app: FastAPI):
     get_embedder()
     get_reranker()
     get_dense_matrix()
-    get_corpus_chunks()
     get_bm25s_retriever()
-    get_bm25_index()
+    get_corpus_chunks()
     get_qdrant_client()
 
     logging.info("RAG models and indexes loaded.")

@@ -1,0 +1,112 @@
+{
+  "steps": [
+    {
+      "component": "1. Python Base Interpreter",
+      "rss_mb": 17.12,
+      "priv_mb": 9.45,
+      "diff_rss_mb": 17.12,
+      "diff_priv_mb": 9.45
+    },
+    {
+      "component": "2. import numpy",
+      "rss_mb": 33.7,
+      "priv_mb": 503.26,
+      "diff_rss_mb": 16.58,
+      "diff_priv_mb": 493.81
+    },
+    {
+      "component": "3. import fastapi / uvicorn / pydantic",
+      "rss_mb": 62.05,
+      "priv_mb": 528.96,
+      "diff_rss_mb": 28.35,
+      "diff_priv_mb": 25.7
+    },
+    {
+      "component": "4. import torch (PyTorch C++ Engine)",
+      "rss_mb": 214.71,
+      "priv_mb": 678.73,
+      "diff_rss_mb": 152.66,
+      "diff_priv_mb": 149.77
+    },
+    {
+      "component": "5. import sentence_transformers",
+      "rss_mb": 434.71,
+      "priv_mb": 1359.74,
+      "diff_rss_mb": 220.0,
+      "diff_priv_mb": 681.01
+    },
+    {
+      "component": "6. import transformers (AutoTokenizer)",
+      "rss_mb": 434.71,
+      "priv_mb": 1359.74,
+      "diff_rss_mb": 0.0,
+      "diff_priv_mb": 0.0
+    },
+    {
+      "component": "7. import onnxruntime",
+      "rss_mb": 449.29,
+      "priv_mb": 1369.88,
+      "diff_rss_mb": 14.58,
+      "diff_priv_mb": 10.14
+    },
+    {
+      "component": "8. import bm25s",
+      "rss_mb": 450.31,
+      "priv_mb": 1371.48,
+      "diff_rss_mb": 1.02,
+      "diff_priv_mb": 1.6
+    },
+    {
+      "component": "9. Load ONNX Embedder Session + Tokenizer",
+      "rss_mb": 802.55,
+      "priv_mb": 1725.3,
+      "diff_rss_mb": 352.24,
+      "diff_priv_mb": 353.82
+    },
+    {
+      "component": "10. Load ONNX Reranker Session + Tokenizer",
+      "rss_mb": 852.82,
+      "priv_mb": 1775.4,
+      "diff_rss_mb": 50.27,
+      "diff_priv_mb": 50.1
+    },
+    {
+      "component": "11. Load dense_vectors.npy (mmap_mode='r')",
+      "rss_mb": 852.9,
+      "priv_mb": 1776.15,
+      "diff_rss_mb": 0.08,
+      "diff_priv_mb": 0.75
+    },
+    {
+      "component": "12. Load BM25s Index (load_corpus=False)",
+      "rss_mb": 902.42,
+      "priv_mb": 1826.45,
+      "diff_rss_mb": 49.52,
+      "diff_priv_mb": 50.3
+    },
+    {
+      "component": "13. Load Corpus Chunks (chunks_sentence_aware.jsonl)",
+      "rss_mb": 1406.17,
+      "priv_mb": 2330.61,
+      "diff_rss_mb": 503.75,
+      "diff_priv_mb": 504.16
+    },
+    {
+      "component": "14. Instantiate PyTorch SentenceTransformer (Parallel Test)",
+      "rss_mb": 1669.01,
+      "priv_mb": 3436.57,
+      "diff_rss_mb": 262.84,
+      "diff_priv_mb": 1105.96
+    },
+    {
+      "component": "15. Instantiate PyTorch CrossEncoder (Parallel Test)",
+      "rss_mb": 1677.48,
+      "priv_mb": 3177.91,
+      "diff_rss_mb": 8.47,
+      "diff_priv_mb": -258.66
+    }
+  ],
+  "has_torch_imported": true,
+  "has_sentence_transformers_imported": true,
+  "total_modules": 4236
+}
