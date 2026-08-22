@@ -22,6 +22,8 @@ server/data/raw/*
 !server/data/raw/.gitkeep
 server/data/processed/*
 !server/data/processed/.gitkeep
+server/data/models/*
+!server/data/models/.gitkeep
 
 # Binary & Index files
 *.npy
@@ -29,6 +31,8 @@ server/data/processed/*
 *.jsonl
 *.bin
 *.index
+*.onnx
+*.data
 
 # Jupyter
 .ipynb_checkpoints/
